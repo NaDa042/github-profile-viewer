@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gh:// profile lookup</title>
+<link rel="stylesheet" href="src/style.css">
+<script type="module" src="./dist/app.js"></script>
+</head>
+<body>
+ 
+  <div class="prompt">gh<span>://</span>lookup</div>
+  <h1>Find a GitHub profile</h1>
+ 
+  <form id="lookup-form">
+    <div class="input-wrap">
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="github user name"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+        required
+      >
+    </div>
+    <button type="submit" id="submit-btn">Fetch</button>
+  </form>
+ 
+  <div id="status"></div>
+ 
+  <!-- Card is hidden until you fill it with real data. Add class "visible" to show it. -->
+  <div id="card">
+    <div class="card-head">
+      <img id="avatar" src="" alt="">
+      <div class="card-id">
+        <p id="display-name">Name</p>
+        <p id="login">@login</p>
+      </div>
+    </div>
+ 
+    <p id="bio"></p>
+ 
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-value" id="stat-repos">0</div>
+        <div class="stat-label">Repos</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="stat-followers">0</div>
+        <div class="stat-label">Followers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="stat-following">0</div>
+        <div class="stat-label">Following</div>
+      </div>
+    </div>
+ 
+    <a id="profile-link" href="#" target="_blank" rel="noopener">View profile on GitHub &rarr;</a>
+ 
+    <div class="section-label">Recent repositories</div>
+    <div id="repos"></div>
+  </div>
+ 
+ 
+</body>
+</html>
+ 

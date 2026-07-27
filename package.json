@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "github-profile-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --run",
+    "start": "node dist/main.js",
+    "build": "npx tsc",
+    "dev": "npx tsc && node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaDa042/Pokedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaDa042/Pokedex/issues"
+  },
+  "homepage": "https://github.com/NaDa042/Pokedex#readme",
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
